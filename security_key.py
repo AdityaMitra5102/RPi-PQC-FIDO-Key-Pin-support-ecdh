@@ -619,7 +619,7 @@ def CTAPHID_CBOR(channel, payload):
         to_send=preprocess_send_data(channel, command, bcnt, reply)
         return (to_send)
     else:
-        reply=b'\x01'+success.to_bytes(1,'big')
+        reply=success.to_bytes(1,'big')
         bcnt=len(reply)
         to_send=preprocess_send_data(channel, command, bcnt, reply)
         return (to_send)
