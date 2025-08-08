@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QKey Demo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f9fc;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background-color: #283593;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+    main {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+    }
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    .highlight {
+        background-color: #e8f0fe;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 1.1em;
+        display: inline-block;
+    }
+    a {
+        color: #1565c0;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .image-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #777;
+        padding: 10px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>QKey Demo</h1>
+</header>
+
+<main>
+    <div class="card">
+        <h2>About This Key</h2>
+        <p>This demo showcases the <strong>ML-DSA</strong> based security key implementation.</p>
+        <p>The key supports passwordless authentication and can be tested with any compatible website.</p>
+        <div class="image-container">
+            <img src="/img.jpg" alt="ML-DSA Security Key">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Default PIN</h2>
+        <p>The default PIN for this security key is:</p>
+        <div class="highlight">1234</div>
+        <p>You can change it at any time using the provided PIN changer script.</p>
+        <p><a href="/pin-changer.py" download>Click here to download pin-changer.py</a></p>
+    </div>
+
+    <div class="card">
+        <h2>Testing the Key</h2>
+        <p>You can use the following relying party server to verify if ML-DSA is working:</p>
+        <p><a href="https://mldsafido.mukham.in" target="_blank">mldsafido.mukham.in</a></p>
+        <p>The key will also work with other WebAuthn-compatible websites.</p>
+    </div>
+</main>
+
+
+</body>
+</html>
